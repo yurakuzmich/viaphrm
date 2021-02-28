@@ -1,0 +1,39 @@
+@import "media_querys";
+@import "./../../../assets/styles/variables";
+
+
+
+  .header {
+    height: 112px;
+    margin: 10px auto 0 auto;
+  }
+  
+
+.menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+    &__navigation {
+      display: flex;
+      flex-direction: row;
+  
+      list-style-type: none;
+  
+      &-item {
+        margin-left: 35px;
+  
+        &-link,
+        &-link:visited {
+          @extend %nav-font;
+  
+          text-decoration: none;
+  
+          &:hover {
+              opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+

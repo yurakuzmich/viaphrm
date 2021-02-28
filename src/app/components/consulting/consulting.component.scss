@@ -1,0 +1,10 @@
+@import "./../../../assets/styles/variables";
+
+
+.consulting {
+
+    &__wrapper {
+        height: 400px;
+        background: url('./../../../assets/images/background/consulting_1.jpg') no-repeat center center;
+    }
+}

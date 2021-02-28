@@ -1,0 +1,77 @@
+@import "./../../../assets/styles/variables";
+
+.development-synt {
+  @extend %section-790;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: url("./../../../assets/images/background/development_1.jpg")
+    no-repeat center bottom;
+
+  &__main {
+    height: 640px;
+  }
+    
+  &__header {
+    @extend %section-heading-font;
+    max-width: 730px;
+    margin: 73px 0 34px 0;
+
+    &_green {
+      color: #10bb69;
+    }
+  }
+
+  &__subheader {
+    @extend %section-subheading-font;
+
+    max-width: 790px;
+    margin: 34px 0px 88px 0px;
+
+    color: #696871;
+  }
+
+  &__small-header {
+    @extend %small-heading-font;
+
+    &_tutorial {
+      padding-left: 45px;
+      background: url("./../../../assets/images/icons/youtube.svg") no-repeat left center;
+    }
+  }
+
+  &__small-subheader {
+    @extend %small-subheading-font;
+
+    &_tutorial {
+      padding-left: 45px;
+    }
+  }
+}
+
+.development-formula {
+  @extend %section-900;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  background: url("./../../../assets/images/background/development_2.jpg") no-repeat center bottom;
+
+  &__header {
+    @extend %section-heading-font;
+
+    color: #fff;
+  }
+
+  &__subheader {
+    @extend %section-subheading-font;
+    max-width: 790px;
+
+    margin: 34px 0px 88px 0px;
+    color: #fff;
+  }
+}

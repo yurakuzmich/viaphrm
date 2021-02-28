@@ -1,0 +1,54 @@
+@import "./../../../assets/styles/variables";
+
+.footer {
+  height: 308px;
+
+  &__row {
+      height: 100%;
+  }
+}
+
+.send-letter {
+  width: 350px;
+  height: 116px;
+  padding: 33px 0 0 120px;
+
+  border: 1px solid #10bb69;
+  border-radius: 21px;
+
+  background: url("./../../../assets/images/icons/footer_mail.svg") no-repeat
+    23px center;
+
+  &__head {
+    margin: 0 0 4px 0;
+
+    font-family: Eastman;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__link:link,
+  &__link:visited {
+    margin: 0;
+
+    font-family: Eastman;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left; 
+
+    text-decoration: none;
+    color: #696871;
+
+    
+    &:hover {
+        opacity: 0.7;
+    }
+  }
+}

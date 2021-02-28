@@ -1,0 +1,15 @@
+@import "./../../../assets/styles/variables";
+
+.about-head {
+  @extend %section-790;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  background: url('./../../../assets/images/background/about_1.jpg') no-repeat center center;
+
+  &__logo {
+      margin-top: 125px;
+      text-align: center;
+  }
+}

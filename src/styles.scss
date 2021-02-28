@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/fonts";
+
+%section-790 {
+    width: 100%;
+    max-width: 1440px;
+    height: 790px;
+  
+    margin: 0 auto;
+  }
+  
+  %section-900 {
+    width: 100%;
+    max-width: 1440px;
+    height: 900px;
+  
+    margin: 0 auto;
+  }
+  
+  %nav-font {
+    font-family: Eastman;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #696871;
+  
+  }
+  
+  %section-heading-font {
+    font-family: Eastman;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  
+  %section-subheading-font {
+    font-family: Eastman;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  
+  %subheader-font {
+    font-family: Eastman;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
