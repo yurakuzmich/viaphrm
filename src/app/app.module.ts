@@ -14,6 +14,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './components/contacts/map/map.component';
+import { SocialButtonsComponent } from './components/home/social-buttons/social-buttons.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MapComponent } from './components/contacts/map/map.component';
     ConsultingComponent,
     AboutComponent,
     ContactsComponent,
-    MapComponent
+    MapComponent,
+    SocialButtonsComponent
   ],
   imports: [
     BrowserModule,

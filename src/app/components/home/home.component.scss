@@ -1,9 +1,13 @@
 @import "./../../../assets/styles/variables";
 
+.home-wrapper {
+  background-color: #F6F8FB;
+}
+
 .head-section {
     @extend %section-790;
   
-    background: url("./../../../assets/images/background/main_page.svg") no-repeat center bottom;
+    background: url("./../../../assets/images/background/main_page.svg") no-repeat right bottom;
   
     &__wrapper {
       width: 100wv;

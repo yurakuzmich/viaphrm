@@ -1,0 +1,12 @@
+.social-buttons {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__item {
+    display: block;
+    margin: 45px 14px;
+  }
+}
