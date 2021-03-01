@@ -86,3 +86,56 @@
   letter-spacing: 0px;
   text-align: left;
 }
+
+%green-button {
+  height: 50px;
+
+  font-family: Eastman;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+
+  background: #10bb69;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+%consulting-button {
+  width: 105px;
+  height: 40px;
+
+  font-family: Eastman;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #10BB69;
+
+  background: #ffffff;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

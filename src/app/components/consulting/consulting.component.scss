@@ -1,10 +1,116 @@
 @import "./../../../assets/styles/variables";
 
-
 .consulting {
+  &__wrapper {
+    height: 400px;
+    background: url("./../../../assets/images/background/consulting_1.jpg")
+        no-repeat center center,
+      url("./../../../assets/images/background/consulting_1_1.jpg") no-repeat
+        center center;
 
-    &__wrapper {
-        height: 400px;
-        background: url('./../../../assets/images/background/consulting_1.jpg') no-repeat center center;
+    mix-blend-mode: multiply;
+  }
+
+  &__head-text {
+    @extend %section-heading-font;
+    max-width: 850px;
+    margin: 116px auto 29px auto;
+
+    text-align: left;
+    color: #ffffff;
+  }
+
+  &__subhead-text {
+    @extend %section-subheading-font;
+    max-width: 850px;
+    margin: 0 auto;
+
+    text-align: left;
+    color: #ffffff;
+  }
+
+  &__article-head {
+    @extend %section-heading-font;
+    max-width: 850px;
+    margin: 80px auto 35px auto;
+
+    text-align: left;
+
+    &_small {
+      @extend %small-heading-font;
+      max-width: 850px;
+      margin: 70px auto 15px auto;
     }
+  }
+
+  &__article-text {
+    @extend %page-font;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  &__article-img {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 858px;
+    margin: 47px auto 195px auto;
+  }
+
+  &__contact {
+    margin: 45px 0 30px 0;
+
+    &-head {
+      @extend %section-heading-font;
+    }
+
+    &-button {
+      @extend %green-button;
+      width: 214px;
+    }
+  }
+
+  &-cards {
+    &__wrapper {
+      background: #c4c4c4;
+    }
+  }
+
+  &-card {
+    width: 540px;
+    height: 340px;
+    margin-bottom: 30px;
+    padding: 55px 43px 0 65px;
+
+    border-radius: 9px;
+
+    &_state-1 {
+      background: #f6f8fb;
+    }
+
+    &_state-2 {
+
+    }
+
+    &_state-3 {
+      background: #10BB69;
+      ;
+    }
+
+    &_state-4 {
+      background: url('./../../../assets/images/background/consulting_card_4.jpg') no-repeat;
+    }
+    
+    &__button {
+        @extend %consulting-button;
+
+        &_bordered {
+            border: 1px solid #10BB69;
+        }
+
+        &_black {
+            color: #000000;
+        }
+    }
+  }
 }
