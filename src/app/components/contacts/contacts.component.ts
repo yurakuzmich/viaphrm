@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import {InputTextModule} from 'primeng/inputtext';
 
 
@@ -10,7 +11,10 @@ import {InputTextModule} from 'primeng/inputtext';
 export class ContactsComponent implements OnInit {
 
   property = '';
-  constructor() { }
+
+   constructor(pageTitle: Title) {
+    pageTitle.setTitle('Viapharm: Contacts and Location');
+  }
 
   ngOnInit(): void {
   }

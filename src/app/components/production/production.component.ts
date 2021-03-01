@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-production',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductionComponent implements OnInit {
 
-  constructor() { }
+  constructor(pageTitle: Title) {
+    pageTitle.setTitle('Viapharm: Production');
+  }
 
   ngOnInit(): void {
   }
