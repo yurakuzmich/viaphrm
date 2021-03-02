@@ -36,21 +36,22 @@
   justify-content: flex-end;
   align-items: center;
 
-  background: url("./../../../assets/images/background/production_2.jpg") no-repeat center bottom;
+  background: url("./../../../assets/images/background/production_2.jpg")
+    no-repeat center bottom;
 
   &__header {
     @extend %section-heading-font;
     max-width: 528px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
 
     &_green {
-        color: #10bb69;
-      }
+      color: #10bb69;
+    }
   }
 
   &__subheader {
     @extend %section-subheading-font;
     max-width: 790px;
-    margin-bottom: 88px;
+    margin: 0 auto 88px auto;
   }
 }
