@@ -1,45 +1,46 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h2>Contact us</h2>
-      <p>
+      <h2 class="contacts__head-text">Contact us</h2>
+      <p class="contacts__subhead-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt.
       </p>
       <form action="">
-        <label for="">
-            Name
-            <input type="text" name="" id="">
-        </label>
-        <label for="">
-            Email
-            <input type="email" name="" id="">
-        </label>
-        <label for="">
-            Phone
-            <input type="tel" name="" id="">
-        </label>
-        <label for="">
-            Message
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </label>
+        <div>
+        <label for="contacts__name" class="contact-form__label" >Name</label>
+        <input type="text" name="" class="contact-form__input" id="contacts__name" placeholder="Your name" ngModel required/>
+      </div>
+      <div>
+        <label for="contacts__email" class="contact-form__label">Email</label>
+        <input type="email" name="" class="contact-form__input" id="contacts__email" placeholder="Your email"/>
+      </div>
+      <div>
+        <label for="contacts__phone" class="contact-form__label" >Phone</label>
+        <input type="tel" name="" class="contact-form__input" id="contacts__phone" placeholder="Your phone"/>
+      </div>
+      <div>
+        <label for="contacts__message" class="contact-form__label" >Message</label>
+        <textarea name="" class="contact-form__input contact-form__input_message" id="contacts__message" cols="30" rows="30" placeholder="Write a message"></textarea>
+      </div>
+      <div>
+        <button type="submit" class="contact-form__submit">Send</button>
+      </div>
       </form>
     </div>
     <div class="col">
-      <h2>Get in Touch</h2>
-      <p>
+      <h2 class="contacts__head-text">Get in Touch</h2>
+      <p class="contacts__subhead-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt.
       </p>
-      <a href="">+1 000 00 00</a><br>
-      <a href="mailto:">viapharm@gmail.com</a>
+      <a href="tel:555" class="contacts__direct-contacts"><i class="fa fa-phone material-icons green"></i> +1 000 00 00</a><br />
+      <a href="mailto:" class="contacts__direct-contacts"><i class="fa fa-envelope material-icons green"></i> viapharm@gmail.com</a>
     </div>
   </div>
 </div>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col">
-           map
-        </div>
-    </div>
+  <div class="row">
+    <div class="col">map</div>
+  </div>
 </div>

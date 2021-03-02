@@ -1,5 +1,83 @@
 @import "./../../../assets/styles/variables";
 
-label {
+.contacts {
+  &__head-text {
+    @extend %section-heading-font;
+  }
+
+  &__subhead-text {
+    @extend %page-font;
+    font-size: 14px;
+    color: #696871;
+  }
+
+  &__direct-contacts {
+    font-family: Eastman;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+
+    color: #000000;
+
+    &:hover {
+        opacity: 0.8;
+    }
+  }
+}
+
+.material-icons.green {
+    color: #10BB69;
+}
+
+.contact-form {
+  &__label {
     display: block;
+    margin-top: 37px;
+
+    font-family: Eastman;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+
+  &__input {
+    width: 90%;
+    height: 50px;
+
+    padding-left: 35px;
+
+    outline: none;
+    border: 1px solid #c7c6ca;
+    border-radius: 40px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: Eastman;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    &_message {
+      border-radius: 9px;
+    }
+  }
+
+  &__submit {
+    @extend %green-button;
+    width: 90px;
+  }
 }

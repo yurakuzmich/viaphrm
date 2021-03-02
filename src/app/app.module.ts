@@ -13,6 +13,7 @@ import { ConsultingComponent } from './components/consulting/consulting.componen
 import { AboutComponent } from './components/about/about.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { SocialButtonsComponent } from './components/home/social-buttons/social-buttons.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SocialButtonsComponent } from './components/home/social-buttons/social-
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
