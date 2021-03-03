@@ -9,7 +9,6 @@ import { TranslocoService } from '@ngneat/transloco';
 export class HeaderComponent implements OnInit {
 
   language: string;
-  isBurgerMenuOpened = false;
 
   @ViewChild('burgerCheck') checkBox: any;
 
