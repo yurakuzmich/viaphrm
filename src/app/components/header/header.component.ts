@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  language = 'de';
+
+  constructor(private translocoService: TranslocoService) { }
 
   ngOnInit(): void {
   }
 
+  onLanguageSwitch() {
+    this.language = this.language === 'en' ? 'de' : 'en';
+    this.translocoService.setActiveLang(this.language);
+  }
 }

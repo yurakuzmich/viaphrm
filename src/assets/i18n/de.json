@@ -5,5 +5,9 @@
         "consulting": "Consulting-DE",
         "about": "About us-DE",
         "contact": "Contact and location-DE"
+    },
+    "contacts": {
+        "contactUs": "Contact us-DE",
+        "inTouch": "Get in Touch-DE"
     }
 }
