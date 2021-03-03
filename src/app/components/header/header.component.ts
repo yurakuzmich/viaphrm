@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
@@ -8,15 +8,23 @@ import { TranslocoService } from '@ngneat/transloco';
 })
 export class HeaderComponent implements OnInit {
 
-  language = 'en';
+  language: string;
+  isBurgerMenuOpened = false;
 
-  constructor(private translocoService: TranslocoService) { }
+  @ViewChild('burgerCheck') checkBox: any;
 
-  ngOnInit(): void {
-  }
+  constructor(private translocoService: TranslocoService) {
+    this.language = this.translocoService.getDefaultLang();
+   }
+
+  ngOnInit(): void {}
 
   onLanguageSwitch() {
     this.language = this.language === 'en' ? 'de' : 'en';
     this.translocoService.setActiveLang(this.language);
+  }
+
+  onBurgerClick() {
+    this.checkBox.nativeElement.checked = !this.checkBox.nativeElement.checked;
   }
 }

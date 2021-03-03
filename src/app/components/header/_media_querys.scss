@@ -1,7 +1,15 @@
 
 @media only screen and (max-width: 540px) {
-  .container {
+  .header__container {
     display: none;
+  }
+
+  .menu__box {
+    display: block;
+  }
+
+  .menu__btn {
+    display: flex;
   }
 }
 

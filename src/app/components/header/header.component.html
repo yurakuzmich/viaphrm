@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container header__container">
   <div class="row align-items-center header">
     <div class="col-2">
       <a routerLink="/" class="header__logo">
@@ -9,26 +9,106 @@
       <nav class="menu">
         <ul class="menu__navigation">
           <li class="menu__navigation-item">
-            <a routerLink="/development" routerLinkActive="active-link" class="menu__navigation-item-link">{{ 'navigation.development' | transloco }}</a>
+            <a
+              routerLink="/development"
+              routerLinkActive="active-link"
+              class="menu__navigation-item-link">{{ "navigation.development" | transloco }}</a>
           </li>
           <li class="menu__navigation-item">
-            <a routerLink="/production" routerLinkActive="active-link" class="menu__navigation-item-link">{{ 'navigation.production' | transloco }}</a>
+            <a
+              routerLink="/production"
+              routerLinkActive="active-link"
+              class="menu__navigation-item-link">{{ "navigation.production" | transloco }}</a>
           </li>
           <li class="menu__navigation-item">
-            <a routerLink="/consulting" routerLinkActive="active-link" class="menu__navigation-item-link">{{ 'navigation.consulting' | transloco }}</a>
+            <a
+              routerLink="/consulting"
+              routerLinkActive="active-link"
+              class="menu__navigation-item-link">{{ "navigation.consulting" | transloco }}</a>
           </li>
           <li class="menu__navigation-item">
-            <a routerLink="/about" routerLinkActive="active-link" class="menu__navigation-item-link">{{ 'navigation.about' | transloco }}</a>
+            <a
+              routerLink="/about"
+              routerLinkActive="active-link"
+              class="menu__navigation-item-link">{{ "navigation.about" | transloco }}</a>
           </li>
           <li class="menu__navigation-item">
-            <a routerLink="/contacts" routerLinkActive="active-link" class="menu__navigation-item-link">{{ 'navigation.contact' | transloco }}</a>
+            <a
+              routerLink="/contacts"
+              routerLinkActive="active-link"
+              class="menu__navigation-item-link">{{ "navigation.contact" | transloco }}</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="col-1">
       <button (click)="onLanguageSwitch()">EN/DE</button>
-      <p>Current language is <b>{{ language }}</b></p>
+      <p>
+        Current language is <b>{{ language }}</b>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" #burgerCheck type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box" #menuBox>
+          <div>
+            <button (click)="onLanguageSwitch()">EN/DE</button>
+            <p>
+              Current language is <b>{{ language }}</b>
+            </p>
+          </div>
+          <li>
+            <a
+              class="menu__item"
+              routerLink="/"
+              routerLinkActive="active-link"
+              (click)="onBurgerClick()">{{ "navigation.home" | transloco }}</a>
+          </li>
+          <li>
+            <a
+              class="menu__item"
+              routerLink="/development"
+              routerLinkActive="active-link"
+              (click)="onBurgerClick()">{{ "navigation.development" | transloco }}</a>
+          </li>
+          <li>
+            <a
+              class="menu__item"
+              routerLink="/production"
+              routerLinkActive="active-link"
+              (click)="onBurgerClick()">{{ "navigation.production" | transloco }}</a>
+          </li>
+          <li>
+            <a
+              class="menu__item"
+              routerLink="/consulting"
+              routerLinkActive="active-link"
+              (click)="onBurgerClick()">{{ "navigation.consulting" | transloco }}</a>
+          </li>
+          <li>
+            <a
+              class="menu__item"
+              routerLink="/about"
+              routerLinkActive="active-link"
+              (click)="onBurgerClick()">{{ "navigation.about" | transloco }}</a>
+          </li>
+          <li>
+            <a
+              class="menu__item"
+              routerLink="/contacts"
+              routerLinkActive="active-link"
+              (click)="onBurgerClick()">{{ "navigation.contact" | transloco }}</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

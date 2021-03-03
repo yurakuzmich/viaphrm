@@ -1,5 +1,6 @@
 {
     "navigation": {
+        "home": "Home-DE",
         "development": "Development-DE",
         "production": "Production-DE",
         "consulting": "Consulting-DE",
