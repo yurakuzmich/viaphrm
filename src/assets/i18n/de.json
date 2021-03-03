@@ -9,5 +9,8 @@
     "contacts": {
         "contactUs": "Contact us-DE",
         "inTouch": "Get in Touch-DE"
+    },
+    "footer": {
+        "sendLetter": "Send a letter:-DE"
     }
 }

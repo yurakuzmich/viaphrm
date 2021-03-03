@@ -8,7 +8,7 @@ import { TranslocoService } from '@ngneat/transloco';
 })
 export class HeaderComponent implements OnInit {
 
-  language = 'de';
+  language = 'en';
 
   constructor(private translocoService: TranslocoService) { }
 

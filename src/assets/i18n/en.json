@@ -9,5 +9,8 @@
     "contacts": {
         "contactUs": "Contact us",
         "inTouch": "Get in Touch"
+    },
+    "footer": {
+        "sendLetter": "Send a letter:"
     }
 }
