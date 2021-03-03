@@ -14,6 +14,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { SocialButtonsComponent } from './components/home/social-buttons/social-buttons.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco/transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -39,10 +41,9 @@ import { FormsModule } from '@angular/forms';
       { path: 'consulting', component: ConsultingComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contacts', component: ContactsComponent },
-    ])
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'AIzaSyCBjr9B1WSJrZ9pdt1RgxkKnSduvqh2V1M'
-    // })
+    ]),
+    HttpClientModule,
+    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]

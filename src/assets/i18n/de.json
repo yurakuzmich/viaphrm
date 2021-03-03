@@ -1,0 +1,9 @@
+{
+    "navigation": {
+        "development": "Development-DE",
+        "production": "Production-DE",
+        "consulting": "Consulting-DE",
+        "about": "About us-DE",
+        "contact": "Contact and location-DE"
+    }
+}
