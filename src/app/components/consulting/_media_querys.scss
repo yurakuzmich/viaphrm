@@ -1,0 +1,33 @@
+@media only screen and (max-width: 576px) {
+  .consulting {
+    &-card {
+      width: 400px;
+      height: 240px;
+      margin-bottom: 30px;
+      padding: 15px 23px 0 25px;
+
+      border-radius: 9px;
+
+      &_state-4 {
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1205px) {
+  .consulting {
+    &-card {
+      width: 500px;
+      height: 300px;
+      margin-bottom: 30px;
+      padding: 25px 23px 0 25px;
+
+      border-radius: 9px;
+
+      &_state-4 {
+        background-size: cover;
+      }
+    }
+  }
+}

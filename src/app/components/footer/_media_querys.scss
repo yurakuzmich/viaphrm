@@ -1,0 +1,12 @@
+@media only screen and (max-width: 576px) {
+  .send-letter {
+    width: 250px;
+    padding: 33px 0 0 80px;
+
+    border: 1px solid #10bb69;
+    border-radius: 21px;
+
+    background: url("./../../../assets/images/icons/footer_mail.svg") no-repeat
+      5px center;
+  }
+}

@@ -1,6 +1,22 @@
-  @media (max-width: 768px) {
-    .container {
-      display: none;
+
+@media only screen and (max-width: 540px) {
+  .container {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 960px) {
+  .menu {
+    &__navigation {
+      &-item {
+        margin-left: 15px;
+
+        &-link,
+        &-link:visited {
+          font-size: 13px;
+        }
+      }
     }
   }
-  
+}

@@ -1,11 +1,11 @@
-@import "media_querys";
+
 @import "./../../../assets/styles/variables";
 
 
 
   .header {
     height: 112px;
-    margin: 10px auto 0 auto;
+    margin: 0 auto;
   }
   
 
@@ -30,10 +30,16 @@
           text-decoration: none;
   
           &:hover {
-              opacity: 0.6;
+              opacity: 0.7;
           }
         }
       }
     }
   }
 
+  .active-link {
+    color: #000000 !important;
+  }
+
+
+  @import "media_querys";

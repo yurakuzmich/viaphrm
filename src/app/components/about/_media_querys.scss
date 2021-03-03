@@ -1,0 +1,9 @@
+@media only screen and (max-width: 390px) {
+  .about {
+    &__history {
+      &-paragraph-number {
+        display: none;
+      }
+    }
+  }
+}
