@@ -111,6 +111,12 @@
   &:hover {
     opacity: 0.8;
   }
+
+  &:disabled {
+    background: #696871;
+    opacity: 0.8;
+    cursor: default;
+  }
 }
 
 %consulting-button {

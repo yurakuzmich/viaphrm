@@ -1,0 +1,78 @@
+@import "./../../../../assets/styles/variables";
+
+.contact-form {
+  &__label {
+    position: relative;
+    display: block;
+    margin-top: 37px;
+
+    font-family: Eastman;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: left;
+
+    &_required {
+      &::after {
+        content: "*";
+        position: absolute;
+        margin-left: 5px;
+        top: -3px;
+
+        font-size: 1.2rem;
+        color: #d00;
+      }
+    }
+  }
+
+  &__input {
+    width: 90%;
+    height: 50px;
+
+    padding-left: 35px;
+
+    outline: none;
+    border: 1px solid #c7c6ca;
+    border-radius: 40px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: Eastman;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    &_message {
+      border-radius: 9px;
+    }
+  }
+
+  &__submit {
+    @extend %green-button;
+    width: 90px;
+  }
+}
+
+// .ng-invalid {
+//   border: 2px solid #ff0000;
+// }
+
+.error-message {
+  margin: 5px;
+  padding: 5px;
+
+  font-size: 0.6rem;
+  color: #ff0000;
+
+  border: 1px solid #ff0000;
+  border-radius: 3px;
+}

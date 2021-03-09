@@ -13,9 +13,10 @@ import { ConsultingComponent } from './components/consulting/consulting.componen
 import { AboutComponent } from './components/about/about.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { SocialButtonsComponent } from './components/home/social-buttons/social-buttons.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco/transloco-root.module';
+import { ContactFormComponent } from './components/contacts/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TranslocoRootModule } from './transloco/transloco-root.module';
     ConsultingComponent,
     AboutComponent,
     ContactsComponent,
-    SocialButtonsComponent
+    SocialButtonsComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { TranslocoRootModule } from './transloco/transloco-root.module';
       { path: 'contacts', component: ContactsComponent },
     ]),
     HttpClientModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

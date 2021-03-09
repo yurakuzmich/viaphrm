@@ -1,0 +1,67 @@
+<form (ngSubmit)="sendMessage()" [formGroup]="contactForm">
+  <div>
+    <label for="contacts__name" class="contact-form__label contact-form__label_required">Name</label>
+    <input
+      type="text"
+      name=""
+      class="contact-form__input"
+      id="contacts__name"
+      placeholder="Your name"
+      formControlName="userName"
+    />
+  </div>
+  <div *ngIf="userNameCtrl.invalid && (userNameCtrl.dirty || userNameCtrl.touched)" class="error-message">
+        The field is required
+  </div>
+  <div>
+    <label for="contacts__email" class="contact-form__label contact-form__label_required">Email</label>
+    <input
+      type="email"
+      name=""
+      class="contact-form__input"
+      id="contacts__email"
+      placeholder="Your email"
+      formControlName="userEmail"
+    />
+  </div>
+  <div *ngIf="userEmailCtrl.invalid && (userEmailCtrl.dirty || userEmailCtrl.touched)" class="error-message">
+    <div *ngIf="userEmailCtrl.hasError('required')">The field is required</div>
+    <div *ngIf="userEmailCtrl.hasError('email')">Please enter a valid email</div>
+  </div>
+  <div>
+    <label for="contacts__phone" class="contact-form__label">Phone</label>
+    <input
+      type="tel"
+      name=""
+      class="contact-form__input"
+      id="contacts__phone"
+      placeholder="Your phone"
+      formControlName="userPhone"
+    />
+  </div>
+  <div>
+    <label for="contacts__message" class="contact-form__label contact-form__label_required">Message</label>
+    <textarea
+      name=""
+      class="contact-form__input contact-form__input_message"
+      id="contacts__message"
+      cols="30"
+      rows="30"
+      placeholder="Write a message"
+      formControlName="userMessage"
+    ></textarea>
+  </div>
+  <div *ngIf="userMessageCtrl.invalid && (userMessageCtrl.dirty || userMessageCtrl.touched)" class="error-message">
+    <div *ngIf="userMessageCtrl.hasError('required')">The field is required</div>
+    <div *ngIf="userMessageCtrl.hasError('minlength')">Please enter at least 10 symbols</div>
+  </div>
+  <div>
+    <button
+      type="submit"
+      class="contact-form__submit"
+      [disabled]="contactForm.invalid"
+    >
+      Send
+    </button>
+  </div>
+</form>
