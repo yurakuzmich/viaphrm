@@ -7,8 +7,7 @@
       class="contact-form__input"
       id="contacts__name"
       placeholder="Your name"
-      formControlName="userName"
-    />
+      formControlName="userName"/>
   </div>
   <div *ngIf="userNameCtrl.invalid && (userNameCtrl.dirty || userNameCtrl.touched)" class="error-message">
         The field is required
@@ -21,8 +20,7 @@
       class="contact-form__input"
       id="contacts__email"
       placeholder="Your email"
-      formControlName="userEmail"
-    />
+      formControlName="userEmail"/>
   </div>
   <div *ngIf="userEmailCtrl.invalid && (userEmailCtrl.dirty || userEmailCtrl.touched)" class="error-message">
     <div *ngIf="userEmailCtrl.hasError('required')">The field is required</div>
@@ -36,8 +34,7 @@
       class="contact-form__input"
       id="contacts__phone"
       placeholder="Your phone"
-      formControlName="userPhone"
-    />
+      formControlName="userPhone"/>
   </div>
   <div>
     <label for="contacts__message" class="contact-form__label contact-form__label_required">Message</label>
@@ -48,8 +45,8 @@
       cols="30"
       rows="30"
       placeholder="Write a message"
-      formControlName="userMessage"
-    ></textarea>
+      formControlName="userMessage">
+    </textarea>
   </div>
   <div *ngIf="userMessageCtrl.invalid && (userMessageCtrl.dirty || userMessageCtrl.touched)" class="error-message">
     <div *ngIf="userMessageCtrl.hasError('required')">The field is required</div>
@@ -59,8 +56,7 @@
     <button
       type="submit"
       class="contact-form__submit"
-      [disabled]="contactForm.invalid"
-    >
+      [disabled]="contactForm.invalid">
       Send
     </button>
   </div>

@@ -34,7 +34,11 @@ export class ContactFormComponent implements OnInit {
     if (this.contactForm.valid) {
       console.log(`Form submitted`, this.contactForm.value);
     } else {
-      console.log( `Something wrong`);
+
+      //To enable form validation on submit uncomment lines from 39 to 41 and delete [disabled]="contactForm.invalid" from submit-button attributes in the template
+      // this.userNameCtrl.markAsDirty();
+      // this.userEmailCtrl.markAsDirty();
+      // this.userMessageCtrl.markAsDirty();
     }
   }
 
